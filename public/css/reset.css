@@ -1,3 +1,9 @@
+body,html{
+    width:100%;
+    color:#666;
+    font-size: 0.13rem
+}
+
 *{
     margin: 0;
     padding: 0;

@@ -40,7 +40,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 h3 {
-  margin: 40px 0 0;
+  margin: 0.4rem 0 0;
 }
 ul {
   list-style-type: none;
@@ -48,7 +48,7 @@ ul {
 }
 li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 0.1rem;
 }
 a {
   color: #42b983;

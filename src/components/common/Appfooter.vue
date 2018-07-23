@@ -17,27 +17,29 @@ export default {
 .footer{
     width:100%;
     position: absolute;
-    height:49px;
+    height:0.49rem;
     bottom: 0;
     left:0;
-    display: flex
+    display: flex;
+    box-shadow: 0 0 0.08rem 1px rgba(0,0,0,0.1);
+    background: #fff;
 }
 .footer>a{
     flex: 1;
     text-align: center;;
-    line-height: 16px;
-    padding-top: 10px
+    line-height: 0.16rem;
+    padding-top: 0.1rem
 }
 .router-link-exact-active .footerspan,.router-link-exact-active .footericon {
     color: #F9B371;
 }
 .footericon{
-    font-size: 22px;
+    font-size: 0.22rem;
 }
 .footerspan{
     display: block;
     font-family: PingFangSC-Regular;
-    font-size: 10px;
+    font-size: 0.1rem;
     color: #333333;
 }
 </style>

@@ -27,11 +27,11 @@ export default {
 <style scoped>
 .content{
     width:100%;
-    top:44px;
-    bottom: 49px;
-    background: greenyellow;
-    overflow: hidden;
+    top:0.44rem;
+    bottom: 0.49rem;
+    background: #f5f5f5;
     position: absolute;
-    left:0
+    left:0;
+    z-index: -1 
 }
 </style>
