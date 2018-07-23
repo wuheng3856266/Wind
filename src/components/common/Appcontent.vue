@@ -1,5 +1,5 @@
 <template>
-<div class="content" ref="content">
+<div class="content" :class="{active:module}" ref="content">
     <div>
         <slot></slot>
     </div>
@@ -9,6 +9,9 @@
 
 <script>
 export default {
+    props:{
+        module:Boolean,
+    },
     methods: {
         refreshDOM(){
             this.scroll.refresh();
@@ -18,7 +21,6 @@ export default {
         let scroll = new IScroll(this.$refs.content, {
             
         });
-  
     }
 }
 </script>
@@ -32,5 +34,9 @@ export default {
     position: absolute;
     left:0;
     z-index: -1 
+}
+.active{
+    top: 0;
+    z-index: 0; 
 }
 </style>
