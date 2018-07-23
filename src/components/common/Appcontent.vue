@@ -15,7 +15,6 @@ export default {
         }
     },
     mounted(){
-        console.log(IScroll)
         let scroll = new IScroll(this.$refs.content, {
             
         });
