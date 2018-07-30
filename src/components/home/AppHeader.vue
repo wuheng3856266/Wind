@@ -14,7 +14,6 @@ export default {
 .header{
     width:100%;
     height:0.44rem;
-    background: #F9B371;
     position: absolute;
     line-height: 0.44rem;
     top:0;

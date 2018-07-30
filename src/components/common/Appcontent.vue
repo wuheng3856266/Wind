@@ -21,6 +21,9 @@ export default {
         let scroll = new IScroll(this.$refs.content, {
             
         });
+        scroll.on("beforeScrollStart",()=>{
+            scroll.refresh()
+        })
     }
 }
 </script>
@@ -33,7 +36,8 @@ export default {
     background: #f5f5f5;
     position: absolute;
     left:0;
-    z-index: -1 
+    z-index: -1;
+    overflow: hidden; 
 }
 .active{
     top: 0;

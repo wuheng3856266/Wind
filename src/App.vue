@@ -6,7 +6,7 @@
        <router-view></router-view>
     </keep-alive>
 
-    <appfooter></appfooter>
+    <appfooter class="footer"></appfooter>
     
   </div>
 </template>
@@ -29,6 +29,9 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+}
+#app>.footer{
   text-align: center;
   color: #2c3e50;
 }
