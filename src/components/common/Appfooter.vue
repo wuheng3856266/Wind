@@ -1,6 +1,6 @@
 <template>
     <div class="footer">
-      <router-link to="/"><i class="iconfont footericon iconhome">&#xe62f;</i><span class="footerspan">首页</span></router-link>
+      <router-link to="/home"><i class="iconfont footericon iconhome">&#xe62f;</i><span class="footerspan">首页</span></router-link>
       <router-link to="/chat"><i class="iconfont footericon">&#xeee9;</i><span class="footerspan">风聊</span></router-link>
       <router-link to="/service"><i class="iconfont footericon">&#xe61f;</i><span class="footerspan">生活服务</span></router-link>
       <router-link to="/aboutme"><i class="iconfont footericon">&#xe620;</i><span class="footerspan">我的</span></router-link>
@@ -30,7 +30,8 @@ export default {
     line-height: 0.16rem;
     padding-top: 0.1rem
 }
-.router-link-exact-active .footerspan,.router-link-exact-active .footericon {
+.router-link-exact-active .footerspan,.router-link-exact-active .footericon,
+.router-link-active .footerspan, .router-link-active .footericon{
     color: #F9B371;
 }
 .footericon{
