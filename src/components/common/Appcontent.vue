@@ -1,5 +1,5 @@
 <template>
-<div class="content" :class="{active:module,activeBoom:moduleBoom}" ref="content">
+<div class="content" :class="{active:module}" ref="content">
     <div>
         <slot></slot>
     </div>
@@ -11,22 +11,19 @@
 export default {
     props:{
         module:Boolean,
-        moduleBoom:Boolean
     },
     methods: {
         refreshDOM(){
             this.scroll.refresh();
-            console.log(this.scroll.maxScrollY)
         }
     },
     mounted(){
-        scroll = new IScroll(this.$refs.content, {
-            probeType: 3
+        let scroll = new IScroll(this.$refs.content, {
+            
         });
-        this.scroll = scroll
-        scroll.on('beforeScrollStart', ()=>{
-            scroll.refresh();
-        });
+        scroll.on("beforeScrollStart",()=>{
+            scroll.refresh()
+        })
     }
 }
 </script>
@@ -45,9 +42,5 @@ export default {
 .active{
     top: 0;
     z-index: 0; 
-}
-.activeBoom{
-    bottom: 0;
-    z-index: 1; 
 }
 </style>
